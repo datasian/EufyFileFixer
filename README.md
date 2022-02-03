@@ -31,3 +31,5 @@ $cameraid = @{
 5. Save the file.
 6. Run it in PowerShell.
 
+## Notes
+* You may have to set your execution policy appropriately to run this script since it isn't signed.

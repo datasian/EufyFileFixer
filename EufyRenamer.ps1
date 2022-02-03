@@ -32,7 +32,7 @@ class eufyVideoFile {
     {
         if ($this.fileobject)
         {
-            $regexstring = "^([a-zA-Z \d]+)_(\d{4}_\d{2}_\d{2}_\d{2}_\d{2}_\d{2})"
+            $regexstring = "^(.*?)_(\d{4}_\d{2}_\d{2}_\d{2}_\d{2}_\d{2})"
             $filename = $this.fileobject.basename
             if ($filename -match $regexstring)
             {
