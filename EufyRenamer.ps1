@@ -64,7 +64,7 @@ class eufyVideoFile {
         #rename the actual file
         if ($this.renameme)
         {
-            Write-Host "  [$($this.fileobject.name)]> Setting date from [$($this.fileobject.LastWriteTime)] to [$($this.date)]" -ForegroundColor Gray
+            Write-Host "  [$($this.fileobject.name)]> Renaming this file from [$($this.fileobject.Name)] to [$($this.fixedfilename)]" -ForegroundColor Gray
             Rename-Item -Path $this.fileobject.fullname -NewName $this.fixedfilename -Verbose
         }
     }
